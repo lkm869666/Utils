@@ -29,15 +29,15 @@ public class StringUtil {
 	 * @return
 	 * @return: String
 	 */
-	public static String toHtml(String src) {
+	public static String[] toHtml(String src) {
 		
 		String str = src.replaceAll(System.getProperty("line.separator"), "|")	;
-		String[] split = str.split("\\|");
-		String newStr="";
-		for (String string2 : split) {
-			newStr+="<p>"+string2+"</p>";
+		str.replaceAll("\r", "<br/>");
+		String[] split = str.split("\n");
+		for (int i = 0; i < split.length; i++) {
+			split[i] = "<p>" + split[i] + "</p>";
 		}
-		return newStr;
+		return split;
 		
 	}
 	
