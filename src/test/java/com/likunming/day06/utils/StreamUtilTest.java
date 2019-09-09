@@ -18,6 +18,8 @@ import java.io.FileNotFoundException;
 
 import org.junit.Test;
 
+import com.likunming.common.utils.StreamUtil;
+
 /** 
  * @ClassName: StreamUtilTest 
  * @Description: TODO

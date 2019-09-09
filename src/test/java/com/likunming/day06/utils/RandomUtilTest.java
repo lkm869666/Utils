@@ -15,6 +15,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import com.likunming.common.utils.RandomUtil;
+
 /** 
  * @ClassName: RandomUtilTest 
  * @Description: TODO

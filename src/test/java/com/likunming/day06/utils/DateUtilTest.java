@@ -19,6 +19,8 @@ import java.util.Date;
 
 import org.junit.Test;
 
+import com.likunming.common.utils.DateUtil;
+
 /** 
  * @ClassName: DateUtilTest 
  * @Description: TODO

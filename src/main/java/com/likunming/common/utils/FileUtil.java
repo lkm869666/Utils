@@ -9,7 +9,7 @@
  * @date: 2019年9月5日 上午10:28:01 
  * @version: V1.0   
  */
-package com.likunming.day06.utils;
+package com.likunming.common.utils;
 
 import java.io.File;
 

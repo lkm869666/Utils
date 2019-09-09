@@ -17,6 +17,8 @@ import java.io.UnsupportedEncodingException;
 
 import org.junit.Test;
 
+import com.likunming.common.utils.StringUtil;
+
 /** 
  * @ClassName: StringUtilTest 
  * @Description: TODO
@@ -26,7 +28,7 @@ import org.junit.Test;
 public class StringUtilTest {
 
 	/**
-	 * Test method for {@link com.likunming.day06.utils.StringUtil#hasLength(java.lang.String)}.
+	 * Test method for {@link com.likunming.common.utils.StringUtil#hasLength(java.lang.String)}.
 	 */
 	@Test
 	public void testHasLength() {
@@ -34,7 +36,7 @@ public class StringUtilTest {
 	}
 
 	/**
-	 * Test method for {@link com.likunming.day06.utils.StringUtil#hasText(java.lang.String)}.
+	 * Test method for {@link com.likunming.common.utils.StringUtil#hasText(java.lang.String)}.
 	 */
 	@Test
 	public void testHasText() {
@@ -48,7 +50,7 @@ public class StringUtilTest {
 	}
 
 	/**
-	 * Test method for {@link com.likunming.day06.utils.StringUtil#generateChineseName()}.
+	 * Test method for {@link com.likunming.common.utils.StringUtil#generateChineseName()}.
 	 */
 	@Test
 	public void testGenerateChineseName() {

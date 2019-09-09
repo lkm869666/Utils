@@ -9,7 +9,7 @@
  * @date: 2019年9月7日 下午1:51:46 
  * @version: V1.0   
  */
-package com.likunming.day06.utils;
+package com.likunming.common.utils;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Random;

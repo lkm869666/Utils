@@ -9,7 +9,7 @@
  * @date: 2019年9月7日 下午12:47:45 
  * @version: V1.0   
  */
-package com.likunming.day06.utils;
+package com.likunming.common.utils;
 
 import java.util.HashSet;
 import java.util.Random;

@@ -17,6 +17,8 @@ import java.io.File;
 
 import org.junit.Test;
 
+import com.likunming.common.utils.FileUtil;
+
 /** 
  * @ClassName: FileUtilTest 
  * @Description: TODO
