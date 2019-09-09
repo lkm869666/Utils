@@ -29,16 +29,16 @@ public class StringUtil {
 	 * @return
 	 * @return: String
 	 */
-	public static String[] toHtml(String src) {
+	public static String toHtml(String src) {
 		
 		String str = src.replaceAll(System.getProperty("line.separator"), "|")	;
-		str.replaceAll("\r", "<br/>");
-		String[] split = str.split("\n");
-		for (int i = 0; i < split.length; i++) {
-			split[i] = "<p>" + split[i] + "</p>";
+		String[] split = str.split("\\|");
+		String newStr = "";
+		for (String string : split) {
+			newStr += "<p>" + string + "</p>";
 		}
-		return split;
 		
+		return newStr;
 	}
 	
 //	验证手机号

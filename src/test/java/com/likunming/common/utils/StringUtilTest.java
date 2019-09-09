@@ -31,10 +31,8 @@ public class StringUtilTest {
 	 */
 	@Test
 	public void testToHtml() {
-		String[] html = StringUtil.toHtml("哈哈哈哈哈哈\n哈哈\n哈哈哈哈");
-		for (String string : html) {
-			System.out.println(string);
-		}
+		String html = StringUtil.toHtml("哈哈哈哈哈哈\n哈哈\n哈哈哈哈");
+			System.out.println(html);
 	}
 
 	/**
