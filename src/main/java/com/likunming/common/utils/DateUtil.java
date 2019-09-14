@@ -66,4 +66,16 @@ public class DateUtil {
 		return c.getTime();
 	}
 	
+//	让当前日期减去对应月份
+	public static Date getDateByMonthSub(Date date, int month) {
+		
+		Calendar c = Calendar.getInstance();
+		
+		c.setTime(date);
+		
+		c.add(Calendar.MONTH, - month);
+		
+		return c.getTime();
+	}
+	
 }
