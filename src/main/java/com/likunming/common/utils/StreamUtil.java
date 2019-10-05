@@ -11,12 +11,15 @@
  */
 package com.likunming.common.utils;
 
+import java.io.BufferedWriter;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStreamWriter;
 
 /** 
  * @ClassName: StreamUtil 
@@ -25,6 +28,30 @@ import java.io.InputStream;
  * @date: 2019年9月5日 上午10:28:14  
  */
 public class StreamUtil {
+	
+	/**
+	 * @Title: writeFile
+	 * @Description: 按照指定的编码把内容写入指定的文件中
+	 * @param path
+	 * @param content
+	 * @param charset
+	 * @throws IOException
+	 * @return: void
+	 */
+	public static void writeFile(String path, String content, String charset) throws IOException {
+//		创建写入的文件
+		File file = new File(path);
+//		判断父目录是否存在
+		if (!file.getParentFile().exists()) {
+//			创建父目录
+			file.getParentFile().mkdirs();
+		}
+//		创建输出流对象
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file), charset));
+		bw.write(content);
+		bw.flush();
+		bw.close();
+	}
 	
 	/*
 	* 方法1：批量关闭流，参数能传无限个。(3分)

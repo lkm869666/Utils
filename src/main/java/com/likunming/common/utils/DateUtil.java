@@ -77,5 +77,32 @@ public class DateUtil {
 		
 		return c.getTime();
 	}
+	/** 
+	 * @Title: randomDate 
+	 * @Description: TODO
+	 * @param parse
+	 * @param date
+	 * @return
+	 * @return: Date
+	 */
+		//随机产生在某个时间段内的日期
+		public static Date randomDate(Date minDate,Date maxDate) {
+			
+			Calendar c1 = Calendar.getInstance();
+			
+			//获取开始的时间的毫米数
+			long l1 = minDate.getTime();
+			//获取结束时间的毫米数
+			long l2 = maxDate.getTime();
+			
+			//随机产生一个l1和l2之间的随机数据 l3
+			
+			long l3= (long) ((Math.random() * (l2-l1 +1 ))+l1);
+			//用毫秒 初始化日历类
+			c1.setTimeInMillis(l3);	
+			
+			return c1.getTime();
+			
+	}
 	
 }
