@@ -22,6 +22,12 @@ import java.util.Random;
  */
 public class StringUtil {
 	
+	public static boolean isNumber(String number) {
+		
+		return number.isEmpty();
+		
+	}
+	
 	/**
 	 * 
 	 * @Title: toHtml   
